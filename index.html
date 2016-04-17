@@ -1,0 +1,60 @@
+<html>
+<head>
+    <!--
+    http://creativejuiz.fr/blog/doc/custom-input-file-full-css3-flat-ui-js.html
+    http://robnyman.github.io/camera-api/
+    http://simpl.info/getusermedia/
+    https://developer.mozilla.org/fr/docs/Tutoriel_canvas/Utilisation_d'images#drawImage
+    -->
+    <style type="text/css">
+        * {
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        #section-input {
+            position: relative;
+        }
+
+        #my-input {
+            opacity: 0;
+            width: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #my-button {
+            cursor: pointer;
+            width: 100px;
+            position: absolute;
+            padding: 20px 0;
+            top: 0;
+            left: 0;
+            background-color: #888888;
+            color: black;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+        #section-input {
+            width: 100px;
+            height: 100px;
+        }
+
+        #my-canvas {
+            border: 1px black solid;
+        }
+    </style>
+</head>
+<body>
+<section id="section-input">
+    <input type="file" accept="image/*" id="my-input">
+    <label id="my-button" for="my-input">Photo</label>
+</section>
+<canvas id="my-canvas"></canvas>
+<img id="my-img">
+<script src="index.js"></script>
+</body>
+</html>
